@@ -10,32 +10,32 @@
 </template>
 
 <script>
-import { onBeforeMount, onMounted, ref } from 'vue'
+import { onBeforeMount, onMounted, ref } from 'vue';
 
 export default {
   setup() {
-    console.log('setup')
-    const reactiveMessge = ref('Hello Reactive Message')
+    console.log('setup');
+    const reactiveMessge = ref('Hello Reactive Message');
     const addReactiveMessage = () => {
-      reactiveMessge.value = reactiveMessge.value + '!'
-    }
-    const normalMessage = 'Hello Nomal Message'
+      reactiveMessge.value = reactiveMessge.value + '!';
+    };
+    const normalMessage = 'Hello Nomal Message';
 
     //  라이프사이클 훅
     onMounted(() => {
-      console.log('onMounted')
-    })
+      console.log('onMounted');
+    });
     onBeforeMount(() => {
-      console.log('onBeforeMount')
-    })
+      console.log('onBeforeMount');
+    });
 
     return {
       reactiveMessge,
       normalMessage,
       addReactiveMessage
-    }
+    };
   }
-}
+};
 </script>
 
 <style></style>

@@ -23,19 +23,19 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const message = ref('안녕하세요!')
-    const rawHtml = ref('<strong>안녕하세요!</strong>')
-    const dynamicTitle = ref('안녕하세요!!!')
-    const isInput = ref(true) //false를 넣으면 input내용 변경가능
+    const message = ref('안녕하세요!');
+    const rawHtml = ref('<strong>안녕하세요!</strong>');
+    const dynamicTitle = ref('안녕하세요!!!');
+    const isInput = ref(true); //false를 넣으면 input내용 변경가능
     const attrs = ref({
       type: 'text',
       value: '12345',
       disalbed: false
-    })
+    });
 
     return {
       message,
@@ -43,9 +43,9 @@ export default {
       dynamicTitle,
       isInput,
       attrs
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped></style>

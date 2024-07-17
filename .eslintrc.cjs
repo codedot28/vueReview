@@ -1,5 +1,5 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
+require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   root: true,
@@ -16,4 +16,4 @@ module.exports = {
     'no-console': process.eventNames.NODE_ENV === 'production' ? 'error' : 'off', //프로덕션일떄는 콘솔을 사용하지 못하고 이외 환경(개발)에서는 콘솔을 사용하도록 설정.
     'vue/multi-word-component-names': 0 // multi-word error
   }
-}
+};

@@ -7,22 +7,22 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const counter = ref(0)
-    const message = ref('Hello Vue3')
+    const counter = ref(0);
+    const message = ref('Hello Vue3');
     const increment = () => {
-      counter.value++
-    }
+      counter.value++;
+    };
     return {
       counter,
       message,
       increment
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped></style>
