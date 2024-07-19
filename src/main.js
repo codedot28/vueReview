@@ -1,4 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { createApp } from 'vue';
 import App from '@/App.vue';
+// import AppCard from './components/AppCard.vue';
 
-createApp(App).mount('#app'); //createApp: vue인스턴스를 생성하는 메서드
+const app = createApp(App);
+
+// app.component('AppCard', AppCard);
+
+app.mount('#app'); //createApp: vue인스턴스를 생성하는 메서드
+
+import 'bootstrap/dist/js/bootstrap.js';
