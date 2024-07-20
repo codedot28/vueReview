@@ -13,6 +13,7 @@ import { reactive } from "vue";
 export default {
   components: {
     AppCard
+
   },
   setup() {
     const post = reactive({
