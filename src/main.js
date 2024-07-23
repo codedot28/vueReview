@@ -7,6 +7,8 @@ const app = createApp(App);
 
 // app.component('AppCard', AppCard);
 
+app.provide('app-message', 'app message 입니다.');
+
 app.mount('#app'); //createApp: vue인스턴스를 생성하는 메서드
 
 import 'bootstrap/dist/js/bootstrap.js';

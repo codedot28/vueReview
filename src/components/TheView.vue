@@ -1,31 +1,20 @@
 <template>
   <main>
-    <div class="container py-4">
-      <MyButton @click="sayHello"></MyButton>
-      <hr />
-      <h2>slot</h2>
-      <FancyButton>click</FancyButton>
-    </div>
+    <ProvideInject></ProvideInject>
   </main>
 </template>
 
 <script>
-import MyButton from './MyButton.vue';
-import FancyButton from './FancyButton.vue';
+import ProvideInject from './ProvideInject.vue';
 
 export default {
   components: {
-    MyButton,
-    FancyButton,
+    ProvideInject
   },
   setup() {
-    const sayHello = () => {
-      alert('hello');
-    }
-
-    return { sayHello }
+    return {};
   }
-}
+};
 </script>
 
 <style lang="scss" scoped></style>
