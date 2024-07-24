@@ -1,20 +1,11 @@
 <template>
-  <main>
-    <ProvideInject></ProvideInject>
-  </main>
+  <div>
+    <DynamicComponent />
+  </div>
 </template>
 
-<script>
-import ProvideInject from './ProvideInject.vue';
-
-export default {
-  components: {
-    ProvideInject
-  },
-  setup() {
-    return {};
-  }
-};
+<script setup>
+import DynamicComponent from './DynamicComponent.vue';
 </script>
 
 <style lang="scss" scoped></style>
